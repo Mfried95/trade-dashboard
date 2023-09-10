@@ -1,25 +1,99 @@
 import { useState, useEffect } from "react";
+import "../styles/trade.css";
+import Order from "./Order";
 
-const Trade = () => {
-  const [marketData, setMarketData] = useState([]);
+const Trade = (props) => {
 
-  useEffect(() => {
-    getMarketApi();
-  }, []);
+  //   const [marketData, setMarketData] = useState([]);
 
-  const getMarketApi = async () => {
-    const api = await fetch(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=7`
-    );
+  //   useEffect(() => {
+  //     getMarketApi();
+  //   }, []);
 
-    const data = await api.json();
+  //   const getMarketApi = async () => {
+  //     const api = await fetch(
+  //       `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Clitecoin%2Cbnb%2Ceos%2Csolana&vs_currencies=USD`
+  //     );
 
-    setMarketData(data);
-  };
+  //     const data = await api.json();
 
-  console.log(marketData)
+  //     setMarketData(data);
+  //   };
 
-  return <div>Trade</div>;
+  // console.log(marketData)
+
+  return (
+    <div className="trade-container">
+      <header>
+        <h1>Spot Trading</h1>
+        <span>Discover SDM spot trading: deposit & trade today! </span>
+      </header>
+
+      <section className="currency-selection">
+        <ul>
+          <li>USD</li>
+          <li>EUR</li>
+          <li>GBP</li>
+          <li>CAD</li>
+          <li>BTC</li>
+          <li>USDC</li>
+          <li>ETH</li>
+          <p> | you are trading with USDC</p>
+        </ul>
+      </section>
+
+      <section className="order-grid-container">
+        <Order 
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+        <Order
+        currencyName={"BTC/USD"}
+        buyPrice={"$25,000"}
+        sellPrice={"$24,500"}
+        spreadPrice={"0.02%"}
+        />
+      </section>
+    </div>
+  );
 };
 
 export default Trade;
