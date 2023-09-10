@@ -1,0 +1,50 @@
+.nav-container {
+  background: rgb(225, 208, 181);
+  background: linear-gradient(
+    257deg,
+    rgba(225, 208, 181, 1) 27%,
+    rgba(232, 201, 154, 1) 48%,
+    rgba(190, 136, 55, 0.8281906512605042) 72%
+  );
+  height: 65px;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & img {
+    max-width: 200px;
+  }
+}
+
+.navlinks,
+.nav-info,
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 1em;
+}
+
+.nav-info {
+  color: black;
+  font-weight: 500;
+}
+
+.navlinks {
+  color: white;
+}
+
+.page-links {
+border: solid rgba(0, 0, 0, 0.224) 1px;
+padding: 3px 15px;
+border-radius: 3px;
+cursor: pointer;
+font-weight: 500;
+}
+
+.page-links:hover{
+  background-color: #d8b37b8b;
+}
