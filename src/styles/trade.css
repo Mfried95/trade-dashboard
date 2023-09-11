@@ -1,12 +1,11 @@
 .currency-selection {
   width: 650px;
-
-  ul {
+& ul {
     border-bottom: solid black 1px;
     padding: 0.5em;
-  }
+}
 
-  li:hover {
+  & li:hover {
     color: rgb(225, 208, 181);
     cursor: pointer;
   }
