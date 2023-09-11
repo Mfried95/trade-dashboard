@@ -22,8 +22,8 @@ header {
   margin-top: 2em;
   width: 50%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns in each row */
-  grid-gap: 10px; /* Adjust the gap between items as needed */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 .order {
@@ -88,4 +88,8 @@ input[type="number"] {
 .buy:hover,
 .sell:hover {
   box-shadow: none;
+}
+
+.slogan {
+  color: rgb(199, 158, 93);
 }

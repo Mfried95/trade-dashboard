@@ -102,60 +102,61 @@ const tradeOrders = [
   {
     id: 1,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.02%",
   },
   {
     id: 2,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.03%", // Change the spreadPrice here
   },
   {
     id: 3,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.04%", // Change the spreadPrice here
   },
   {
     id: 4,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.05%", // Change the spreadPrice here
   },
   {
     id: 5,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.06%", // Change the spreadPrice here
   },
   {
     id: 6,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.07%", // Change the spreadPrice here
   },
   {
     id: 7,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.08%", // Change the spreadPrice here
   },
   {
     id: 8,
     currency: "BTC/USD",
-    buyprice: "$25,000",
-    sellprice: "$24,500",
-    spread: "0.02%",
+    buyPrice: "$25,000",
+    sellPrice: "$24,500",
+    spreadPrice: "0.09%", // Change the spreadPrice here
   },
 ];
+
 
 
 
