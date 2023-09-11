@@ -1,12 +1,12 @@
 .currency-selection {
   width: 650px;
 
-  & ul {
+  ul {
     border-bottom: solid black 1px;
     padding: 0.5em;
   }
 
-  & li:hover {
+  li:hover {
     color: rgb(225, 208, 181);
     cursor: pointer;
   }
@@ -21,72 +21,70 @@ header {
 
 .order-grid-container {
   margin-top: 2em;
-  width: 70%;
+  width: 50%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 columns in each row */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns in each row */
   grid-gap: 10px; /* Adjust the gap between items as needed */
 }
 
 .order {
   padding: 1em;
   height: 200px;
-  width: 300px;
+  width: 250px;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   gap: 1em;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  & .order-header {
-    display: flex;
-    justify-content: space-between;
-  }
+}
 
-  & .button-container {
-    display: flex;
-    justify-content: space-between;
-  }
+.order .order-header {
+  display: flex;
+  justify-content: space-between;
+}
 
-  & .order-type-input {
-    display: flex;
-    justify-content: space-between;
-  }
+.order .button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
 
-  & .quanity-input {
-    display: flex;
-    justify-content: space-between;
-  }
+.order .order-type-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order .quantity-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quanity-input{
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type=number] {
+  width: 80px;
+}
+
+.buy, .sell {
+  border-radius: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .buy {
-  border-radius: 0.3rem;
-  text-align: center;
-  cursor: pointer;
-  width: 120px;
-  height: 50px;
-  background-color: rgb(44, 187, 8, 49%);
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  background-color: rgba(44, 187, 8, 0.49);
 }
 
 .sell {
-  border-radius: 0.3rem;
-  text-align: center;
-  cursor: pointer;
-  width: 120px;
-  height: 50px;
-  background-color: rgb(187, 8, 8, 49%);
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  background-color: rgba(187, 8, 8, 0.49);
 }
 
-.buy:hover{
+.buy:hover, .sell:hover {
   box-shadow: none;
-}
-
-.sell:hover{
-  box-shadow: none;
-}
-
-.quanity-input {
-  & input {
-    width: 100px;
-  }
 }
