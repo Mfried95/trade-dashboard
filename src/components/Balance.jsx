@@ -9,8 +9,71 @@ const Balance = () => {
       </header>
 
       <div className="balance-grid">
-       <BalanceItem/>
-        
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+        <header>
+          <h2>Fiat balance: ${"10,000"}</h2>
+        </header>
+        <br />
+        <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       <BalanceItem 
+       symbol={"ETH"}
+       currency={" Ethereum"}
+       amount={"0.5"}
+       balance={"$12,500"}
+       />
+       
       </div>
     </div>
   );

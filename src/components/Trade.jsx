@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/trade.css";
 import Order from "./Order";
 
-const Trade = (props) => {
+const Trade = () => {
 
   //   const [marketData, setMarketData] = useState([]);
 

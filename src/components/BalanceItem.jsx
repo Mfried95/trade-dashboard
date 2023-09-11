@@ -1,16 +1,16 @@
 import React from 'react'
 
 
-const balanceItem = () => {
+const balanceItem = ({symbol, currency, amount, balance}) => {
   return (
         <div className="balance-item">
           <div className="currency">
-          <span>ETH</span>
-          <span> Ethereum</span>
+          <span>{symbol}</span>
+          <span>{currency}</span>
           </div>
 
           <div className="balance-number">
-            <span>0.5 | $12,500</span>
+            <span>{amount} | {balance}</span>
           </div>
           
         </div>
