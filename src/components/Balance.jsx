@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/balance.css";
-import BalanceItem from "./balanceItem";
+import BalanceItem from "./BalanceItem";
 import { spotBalances, fiatBalances } from "../data/data";
 
 
