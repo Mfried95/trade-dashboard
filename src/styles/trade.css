@@ -1,9 +1,9 @@
 .currency-selection {
   width: 650px;
-& ul {
+  & ul {
     border-bottom: solid black 1px;
     padding: 0.5em;
-}
+  }
 
   & li:hover {
     color: rgb(225, 208, 181);
@@ -58,16 +58,17 @@ header {
   justify-content: space-between;
 }
 
-.quanity-input{
+.quanity-input {
   display: flex;
   justify-content: space-between;
 }
 
-input[type=number] {
+input[type="number"] {
   width: 80px;
 }
 
-.buy, .sell {
+.buy,
+.sell {
   border-radius: 0.3rem;
   text-align: center;
   cursor: pointer;
@@ -84,6 +85,7 @@ input[type=number] {
   background-color: rgba(187, 8, 8, 0.49);
 }
 
-.buy:hover, .sell:hover {
+.buy:hover,
+.sell:hover {
   box-shadow: none;
 }

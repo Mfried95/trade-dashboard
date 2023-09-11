@@ -3,7 +3,6 @@ import "../styles/balance.css";
 import BalanceItem from "./BalanceItem";
 import { spotBalances, fiatBalances } from "../data/data";
 
-
 const Balance = () => {
   const [balances, setBalances] = useState([]);
   const [fiat, setFiat] = useState([]);

@@ -5,7 +5,6 @@ const Navigation = () => {
   return (
     <>
       <div className="nav-container">
-        
         <div className="navlinks">
           <img src={logo} alt="" />
           <ul>
