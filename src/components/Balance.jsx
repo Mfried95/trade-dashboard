@@ -32,7 +32,7 @@ const Balance = () => {
       </div>
 
       <header className="new-section-header">
-        <span>New Section Header</span>
+        <span>Fiat balance: $10,000</span>
       </header>
 
       <div className="balance-grid">

@@ -5,12 +5,14 @@
   margin-top: 8em;
   margin-left: 2em;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 
 .balance-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px; /* Adjust the gap between grid items as needed */
+  gap: 0.5em; 
+  justify-content: space-around;
 }
 
 .balance-item {
@@ -21,7 +23,15 @@
 .balance-header{
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.balance-number {
+  display: flex;
+  justify-content: center;
+  text-align: left;
   align-items: center;
   gap: 0.5em;
 }
@@ -39,7 +49,7 @@
 
 .total-bal-display{
   background-color: rgb(225, 208, 181);
-  margin: 0;
+  margin-bottom: 0.5em;
   font-size: 20px;
   text-align: center;
 }
@@ -50,8 +60,8 @@
 
 .new-section-header {
   background-color: rgb(225, 208, 181);
+  margin: 0;
+  font-size: 20px;
   text-align: center;
-  padding: 10px; /* Adjust padding as needed */
-  margin: 0px;
-  font-size: 18px;
+  margin: 0.5em 0em;
 }

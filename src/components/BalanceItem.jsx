@@ -10,7 +10,7 @@ const balanceItem = ({symbol, currency, amount, balance}) => {
           </div>
 
           <div className="balance-number">
-            <span>{amount} | {balance}</span>
+            <span>{amount}  {balance}</span>
           </div>
           
         </div>
