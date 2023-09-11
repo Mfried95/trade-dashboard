@@ -1,8 +1,10 @@
-import React from 'react'
+import "../styles/balance.css"
 
 const Balance = () => {
   return (
-    <div>Balance</div>
+    <div className='balance-container'>
+      <h2>balance</h2>
+    </div>
   )
 }
 

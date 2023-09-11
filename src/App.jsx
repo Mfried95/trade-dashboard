@@ -1,6 +1,7 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
 import Trade from "./components/Trade";
+import Balance from "./components/Balance"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navigation />
       <div className="layout">
         <Trade />
+        <Balance/>
       </div>
     </div>
   );
