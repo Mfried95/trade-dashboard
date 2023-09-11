@@ -1,31 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../styles/balance.css";
 import BalanceItem from "./balanceItem";
+import { spotBalances, fiatBalances } from "../data/data";
+
 
 const Balance = () => {
-  // State to store balance data
   const [balances, setBalances] = useState([]);
-  const [fiat, setFiat] = useState([])
-
-  // Simulated data (you can fetch this from an API)
-  const spotBalances = [
-    { id: 1, symbol: "ETH", currency: "Ethereum", amount: 0.5, balance: '$ 12,500' },
-    { id: 2, symbol: "BTC", currency: "Bitcoin", amount: 1.2 },
-    
-  ];
-
-  const fiatBalances = [
-    { id: 1, symbol: "ETHs", currency: "Ethereum", amount: 0.5, balance: '$ 12,500' },
-    { id: 2, symbol: "BTC", currency: "Bitcoin", amount: 1.2 },
-    
-  ];
+  const [fiat, setFiat] = useState([]);
 
   useEffect(() => {
-    setBalances(spotBalances)
-    setFiat(fiatBalances)
+    setBalances(spotBalances);
+    setFiat(fiatBalances);
   }, []);
-
-  console.log("this is fiat state", fiat)
 
   return (
     <div className="balance-container">
@@ -40,7 +26,7 @@ const Balance = () => {
             symbol={balance.symbol}
             currency={balance.currency}
             amount={balance.amount}
-            balance={balance.balance} 
+            balance={balance.balance}
           />
         ))}
       </div>
@@ -50,13 +36,13 @@ const Balance = () => {
       </header>
 
       <div className="balance-grid">
-      {fiat.map((money) => (
+        {fiat.map((money) => (
           <BalanceItem
             key={money.id}
             symbol={money.symbol}
             currency={money.currency}
             amount={money.amount}
-            balance={money.balance} 
+            balance={money.balance}
           />
         ))}
       </div>
