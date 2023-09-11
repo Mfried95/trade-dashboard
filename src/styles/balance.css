@@ -1,7 +1,23 @@
-.balance-container{
-  background-color: rgb(255, 255, 255);
+.balance-container {
+  background-color: white;
   height: 500px;
   width: 320px;
   margin-top: 8em;
   margin-left: 2em;
+}
+
+.balance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px; /* Adjust the gap between grid items as needed */
+}
+
+.balance-item {
+  background-color: lightgray; /* Add styles for the grid items */
+  height: 50px;
+  text-align: center;
+}
+
+.currency{
+  
 }
