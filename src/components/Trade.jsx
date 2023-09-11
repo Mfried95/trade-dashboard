@@ -1,26 +1,14 @@
 import { useState, useEffect } from "react";
 import "../styles/trade.css";
-import Order from "./Order";
+import OrderItem from "./OrderItem"; // Assuming you have an OrderItem component
+import { tradeOrders } from "../data/data";
 
 const Trade = () => {
+  const [orders, setOrders] = useState([]);
 
-  //   const [marketData, setMarketData] = useState([]);
-
-  //   useEffect(() => {
-  //     getMarketApi();
-  //   }, []);
-
-  //   const getMarketApi = async () => {
-  //     const api = await fetch(
-  //       `https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Clitecoin%2Cbnb%2Ceos%2Csolana&vs_currencies=USD`
-  //     );
-
-  //     const data = await api.json();
-
-  //     setMarketData(data);
-  //   };
-
-  // console.log(marketData)
+  useEffect(() => {
+    setOrders(tradeOrders);
+  }, []);
 
   return (
     <div className="trade-container">
@@ -43,54 +31,15 @@ const Trade = () => {
       </section>
 
       <section className="order-grid-container">
-        <Order 
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
-        <Order
-        currencyName={"BTC/USD"}
-        buyPrice={"$25,000"}
-        sellPrice={"$24,500"}
-        spreadPrice={"0.02%"}
-        />
+        {orders.map((item) => (
+          <OrderItem
+            key={item.id}
+            currency={item.currency}
+            buyPrice={item.buyPrice}
+            sellPrice={item.sellPrice}
+            spreadPrice={item.spread}
+          />
+        ))}
       </section>
     </div>
   );

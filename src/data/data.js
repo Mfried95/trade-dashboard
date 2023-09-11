@@ -97,4 +97,66 @@ const fiatBalances = [
   },
 ];
 
-export { spotBalances, fiatBalances };
+
+const tradeOrders = [
+  {
+    id: 1,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 2,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 3,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 4,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 5,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 6,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 7,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+  {
+    id: 8,
+    currency: "BTC/USD",
+    buyprice: "$25,000",
+    sellprice: "$24,500",
+    spread: "0.02%",
+  },
+];
+
+
+
+export { spotBalances, fiatBalances, tradeOrders };
